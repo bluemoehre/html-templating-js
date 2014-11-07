@@ -1,0 +1,21 @@
+body {
+    font: 14px/18px Helvetica, Tahoma, sans-serif;
+}
+header {
+    margin: 0 0 2em 0;
+}
+h1, h2, h3, h4 {
+    margin: 0 0 0.5em 0;
+}
+header h1:not(:last-child) {
+    margin-bottom: 10px;
+}
+main {
+    margin: 20px 0;
+    padding: 20px;
+    color: #2A3840;
+    background-color: #A6E0FF;
+}
+p {
+    margin: 0 0 20px 0;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>html-templating-js - DEMO | Demo Partials | BlueMöhre</title>
+    <script type="text/javascript" src="templating.js"></script>
+    <link rel="stylesheet" type="text/css" href="templating.css" />
+</head>
+<body>
+
+    <div data-tpl="template1">
+        <!-- template contents -->
+
+        <p style="padding:10px; color:#1E4036; background-color:#79FFD9">This is template1 (<a href="_partials.html">_partials.html</a>) with just a few text</p>
+
+        <!-- /template contents -->
+    </div>
+
+
+    <div data-tpl="template2">
+        <!-- template contents -->
+
+        <div style="padding:10px; color:#402513; background-color:#FF944A">
+            <p>This is template2 (<a href="_partials.html">_partials.html</a>) including template2:</p>
+            <var>template1</var>
+        </div>
+
+        <!-- /template contents -->
+    </div>
+
+</body>
+</html>

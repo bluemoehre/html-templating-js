@@ -1,0 +1,18 @@
+html {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////7Ozsrk3oCQAAABhJREFUeNpiYIACRihgGCCBgbYfCgACDABFEACBJZy7kAAAAABJRU5ErkJggg==);
+}
+body {
+    margin: 20px;
+    background: transparent;
+}
+body>[data-tpl] {
+    margin: 50px 0 10px;
+    background: #fff;
+}
+[data-tpl]:before {
+    position: absolute;
+    margin-top: -2em;
+    font-weight: bold;
+    font-style: italic;
+    content: attr(data-tpl);
+}
