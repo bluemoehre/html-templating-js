@@ -163,7 +163,7 @@
             debug.log('placeholders');
             return $nodes.find('var').not('[data-noreplacement]').each(function () {
                 if (replacements[this.textContent]) {
-                    var $clone = $(replacements[this.textContent]);
+                    var $clone = $($.parseHTML(replacements[this.textContent]));
                     var i;
                     // copy attributes from VAR to clone
                     for (i = 0; i < this.attributes.length; i++) {
