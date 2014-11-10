@@ -216,7 +216,7 @@
             $nodes.find('img[src=""]').addBack('img[src=""]').css('background', 'red');
 
             // replace image src placeholders with some default image
-            $nodes.find('img[src^="#"]').addBack('img[src^="#"]').each(function (idx, el) {
+            $nodes.find('img[src^="#"], img[src^="{"]').addBack('img[src^="#"], img[src^="{"]').each(function (idx, el) {
                 el.src = config.imgSrc;
             });
         }
